@@ -2,10 +2,10 @@ TARGET = main
 
 # Compiler and flags
 CC = gcc
-CFLAGS = -Wall -Wextra -O2
+CFLAGS = -Wall -Wextra -O2 -Iinclude
 
 # Source and output
-SRC = src/main.c
+SRC = src/main.c src/bencode.c
 OBJ = $(SRC:.c=.o)
 
 # Default target
